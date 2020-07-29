@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Souley313/collegues-front.svg?branch=master)](https://travis-ci.org/Souley313/collegues-front)
+[![Build Status](https://travis-ci.org/Souley313/collegues-front.svg?branch=master)](https://travis-ci.org/Souley313/collegues-front) [https://souley313.github.io/collegues-front/](https://souley313.github.io/collegues-front/)
 
 # ColleguesFront
 
