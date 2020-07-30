@@ -11,5 +11,8 @@ export class RechercheCollegueParNomComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  rechercheCollegue(): void {
+    console.log('Recherche Collègue');
+  }
 
 }

@@ -1,20 +1,21 @@
 <div class="container" >
     <div class="row">
       <div class="col-sm-4" >
-        <img class="mx-auto d-block img-fluid" style="max-width:550px;"  src="{{ collegue['photoUrl'] }}"/>
+        <span *ngIf="noModif"><img class="mx-auto d-block img-fluid" style="max-width:550px;"  src="{{ collegue['photoUrl'] }}"/></span>
       </div>
       <div class="col-sm-8" >
         <p>Matricule :  {{ collegue['matricule'] }}<br />
           Nom : {{ collegue['nom'] | uppercase }}<br />
           Prenom : {{ collegue['prenoms'] }} <br />
-          <span *ngIf="noModif">Date de naissance : {{ collegue['dateDeNaissance' ] | date:'d MMM y' }}</span><br />
+          Date de naissance : {{ collegue['dateDeNaissance' ] | date:'d MMM y' }}<br />
           <span *ngIf="noModif">Email :  {{ collegue['email'] }}</span>
       </p>
         <form *ngIf="modif" action="">
-          <label for="date">Date de naissance : </label>
-          <input type="text" id="date" name="date" ><br>
           <label for="email">Email : </label>
-          <input type="text" id="email" name="email" >
+          <input type="text" id="email" name="email" ><br/>
+          <label for="date">Photo Url : </label>
+          <input type="text" id="photoUrl" name="photoUrl" ><br/>
+
           <button type="button" class="btn btn-outline-secondary float-right" >Valider</button>
         </form>
 
