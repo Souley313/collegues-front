@@ -11,10 +11,14 @@ export class CollegueComponent implements OnInit {
 
   @Input()
   collegue: CollegueComponent;
+  noModif = true;
+  modif = null;
 
   constructor() { }
 
   afficheConsoleModif(): void {
+    this.modif = true;
+    this.noModif = null;
     console.log('Modification du collègue');
   }
   afficheConsoleCrea(): void {

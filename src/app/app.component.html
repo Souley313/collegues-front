@@ -1,2 +1,11 @@
-<h1>Collegue</h1>
-<app-collegue [collegue]='collegue'></app-collegue>
+<div class="container" style="margin-top:50px">
+    <h1  class="text-center">Administration Collegue</h1>
+    <div class="row">
+        <div class="col-sm-4" >
+            <app-recherche-collegue-par-nom></app-recherche-collegue-par-nom>
+        </div>
+        <div class="col-sm-8" >
+            <app-collegue [collegue]='collegue'></app-collegue>
+        </div>        
+    </div>
+</div>
