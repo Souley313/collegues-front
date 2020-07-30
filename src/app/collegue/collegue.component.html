@@ -1,0 +1,17 @@
+<div class="container" style="margin-top:50px">
+    <div class="row">
+      <div class="col-sm-4" >
+        <img class="mx-auto d-block img-fluid" style="max-width:550px;"  src="{{ collegue['photoUrl'] }}"/>
+      </div>
+      <div class="col-sm-4" >
+        <p>Matricule :  {{ collegue['matricule'] }}<br />
+          Nom : {{ collegue['nom'] }}<br />
+          Prenom : {{ collegue['prenoms'] }} <br />
+          Date de naissance : {{ collegue['dateDeNaissance' ]| date:'d MMM y' }} <br />
+          e-mail : {{ collegue['email'] }}<br />
+        </p>
+        <a href="#"  (click)="afficheConsoleModif()">Créer un nouveau collègue</a>
+        <button type="button" class="btn btn-outline-secondary float-right" (click)="afficheConsoleCrea()">Modifier</button>
+      </div>
+    </div>
+</div>
