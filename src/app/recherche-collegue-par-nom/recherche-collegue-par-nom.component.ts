@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { matricules } from '../mock/matricules.mock';
 
 @Component({
   selector: 'app-recherche-collegue-par-nom',
@@ -7,11 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RechercheCollegueParNomComponent implements OnInit {
 
+  @Input()
+  matricules = matricules;
+  recherche = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
   rechercheCollegue(): void {
+    this.recherche = true;
     console.log('Recherche Collègue');
   }
 

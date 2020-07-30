@@ -1,9 +1,9 @@
 <div class="container" >
     <div class="row">
-      <div class="col-sm-4" >
-        <span *ngIf="noModif"><img class="mx-auto d-block img-fluid" style="max-width:550px;"  src="{{ collegue['photoUrl'] }}"/></span>
+      <div class="col-12 col-sm-4" >
+        <span *ngIf="noModif"><img class="mx-auto d-block img-fluid"  src="{{ collegue['photoUrl'] }}"/></span>
       </div>
-      <div class="col-sm-8" >
+      <div class="col-12 col-sm-8" >
         <p>Matricule :  {{ collegue['matricule'] }}<br />
           Nom : {{ collegue['nom'] | uppercase }}<br />
           Prenom : {{ collegue['prenoms'] }} <br />

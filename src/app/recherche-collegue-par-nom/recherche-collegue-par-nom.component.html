@@ -1,10 +1,13 @@
-<form class="form-inline">
-    <div class="form-group mb-2">
-      <input type="text" readonly class="form-control-plaintext" id="staticRecherche" value="Recherche par nom">
+<h5>Recherche par nom</h5>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Nom" aria-label="Nom" aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="rechercheCollegue()">Rechercher</button>
+      </div>
     </div>
-    <div class="form-group mx-sm-3 mb-2">
-      <label for="inputNom" class="sr-only">Entrer un nom</label>
-      <input type="nom" class="form-control" id="inputNom" placeholder="Nom">
-    </div>
-    <button type="button" class="btn btn-outline-secondary float-right" (click)="rechercheCollegue()">Rechercher</button>
-  </form>
+
+  <div *ngIf="recherche">
+    <ul>
+      <li *ngFor="let obj of matricules">{{obj.matricule}}</li>
+    </ul>
+  </div>

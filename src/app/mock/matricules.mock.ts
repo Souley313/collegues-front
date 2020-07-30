@@ -1,3 +1,6 @@
 import { collegueMock } from './collegues.mock';
 
-export const matricule1 = collegueMock.matricule;
+export const matricules = [{matricule: 'NG543'},
+{matricule: '564HB'},
+{matricule: 'JH376'},
+{matricule: 'GH654'}];

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Collegue } from './models/Collegue';
 import { collegueMock } from './mock/collegues.mock';
+import { matricules } from './mock/matricules.mock';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +10,7 @@ import { collegueMock } from './mock/collegues.mock';
 export class AppComponent {
   title = 'collegues-front';
 
-  collegue: Collegue = collegueMock;
+  collegue = collegueMock;
+
+  matricules = matricules;
 }
