@@ -10,7 +10,5 @@ import { matricules } from './mock/matricules.mock';
 export class AppComponent {
   title = 'collegues-front';
 
-  collegue = collegueMock;
-
-  matricules = matricules;
+constructor(){}
 }

@@ -1,19 +1,19 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Collegue } from '../models/Collegue';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-collegue',
   templateUrl: './collegue.component.html',
-  styleUrls: ['./collegue.component.css']
+  styleUrls: ['./collegue.component.css'],
+  providers: [ DataService ]
 })
 export class CollegueComponent implements OnInit {
 
-  @Input()
-  collegue: CollegueComponent;
+  collegue = this.dataService.recupererCollegueCourant();
   noModif = true;
   modif = null;
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   afficheConsoleModif(): void {
     this.modif = true;
