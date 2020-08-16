@@ -16,7 +16,7 @@
           <label for="date">Photo Url : </label>
           <input type="text" id="photoUrl" name="photoUrl" ><br/>
 
-          <button type="button" class="btn btn-outline-secondary float-right" >Valider</button>
+          <button type="button" class="btn btn-outline-secondary float-right" (click)="valider()">Valider</button>
         </form>
 
         <a *ngIf="noModif" href="#"  (click)="afficheConsoleCrea()">Créer un nouveau collègue</a>

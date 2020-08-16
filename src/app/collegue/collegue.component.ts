@@ -24,6 +24,12 @@ export class CollegueComponent implements OnInit {
     console.log(`Création d'un nouveau collègue`);
   }
 
+  valider(): void{
+    console.log('Validation des modifications');
+    this.modif = false;
+    this.noModif = true;
+  }
+
   ngOnInit(): void {
   }
 
