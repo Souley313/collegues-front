@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { DataService } from '../../services/data.service';
 
-import { NouveauCollegue } from './../models/NouveauCollegue';
+import { NouveauCollegue } from '../../models/NouveauCollegue';
 
 @Component({
   selector: 'app-creer-collegue',

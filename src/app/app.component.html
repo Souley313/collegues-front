@@ -1,14 +1,12 @@
-<div class="container" style="margin-top:50px">
+  <header>
     <h1  class="text-center">Administration Collegue</h1>
-    <div class="row">
-        <div class="col-sm-4" >
-            <app-recherche-collegue-par-nom></app-recherche-collegue-par-nom>
-        </div>
-        <div class="col-sm-8" >
-            <app-collegue ></app-collegue>
-        </div>  
-        <div>
-            <app-creer-collegue></app-creer-collegue>
-          </div>      
-    </div>
-</div>
+    <app-menu></app-menu>
+  </header>
+  
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  
+  <footer>
+    Tous droits réservés
+  </footer>
