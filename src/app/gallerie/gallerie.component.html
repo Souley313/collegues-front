@@ -1,5 +1,9 @@
-
-<ul>
-    <li *ngFor="let col of photoUrl"><strong>matrice</strong>, : {{col.matricule}} <strong>photoUrl</strong>,: {{col.photoUrl}} </li>
-</ul>
+<h4 class="my-3">Galerie des collègues</h4>
+<div class="row">
+  <div *ngFor="let col of photoUrl" class="col-md-4 col-xl-2">
+    <div class="card mb-3">
+        <img src="{{col.photoUrl}}" alt="Photo de {{col.matricule}}" class="card-img-top">
+    </div>
+  </div>
+</div>
   
