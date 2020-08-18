@@ -30,8 +30,8 @@ export class DataService {
     return this.subjectCollegueSelectionne.asObservable();
   }
 
-  listerParNom(nom: string): Observable<string[]> {
-    return this.http.get<string[]>(`https://robin-collegue-app.herokuapp.com/collegues?nom=${nom}`);
+  listerParNom(nom: string): Observable<Collegue> {
+    return this.http.get<Collegue>(`https://leo-collegues-api.herokuapp.com/collegues?nom=${nom}`);
   }
 
   listerPhoto(): Observable<Collegue[]> {
